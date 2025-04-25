@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FLTK App" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FLTK App" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FLTK App" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-s" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="C:/Dev/fltk-install/include" />
+			<Add directory="C:/Dev/fltk-install/lib" />
+		</Compiler>
+		<Linker>
+			<Add option="-DWIN32_LEAN_AND_MEAN" />
+			<Add library="fltk" />
+			<Add library="fltk_images" />
+			<Add library="fltk_forms" />
+			<Add library="fltk_gl" />
+			<Add library="gdi32" />
+			<Add library="ole32" />
+			<Add library="comctl32" />
+			<Add library="oleaut32" />
+			<Add library="uuid" />
+			<Add library="../../../../../Dev/fltk-install/lib/libfltk_png.a" />
+			<Add library="../../../../../Dev/fltk-install/lib/libfltk_z.a" />
+			<Add directory="C:/Dev/fltk-install/lib" />
+		</Linker>
+		<Unit filename="src/headers/miniaudio.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
